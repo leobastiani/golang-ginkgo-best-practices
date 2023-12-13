@@ -1,12 +1,8 @@
-# mockery example
+# ginkgo example
 
 ```bash
-GOBIN=$(git rev-parse --show-toplevel)/bin go install github.com/vektra/mockery/v2@v2.38.0
+GOFLAGS=-mod=mod GOBIN=$(git rev-parse --show-toplevel)/bin go install github.com/onsi/ginkgo/v2/ginkgo
 export PATH="$PWD/bin:$PATH"
-go generate ./...
-go test -v ./...
+go test -v ./pkg/...
+ginkgo -r
 ```
-
-I also tried mockery v3
-
-Check out other branches!

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/leobastiani/golang-mockery-best-practices/src/mypackage"
+	"github.com/leobastiani/golang-ginkgo-best-practices/pkg/mypackage"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
